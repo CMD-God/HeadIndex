@@ -4,10 +4,10 @@ import com.google.gson.*;
 import eu.pb4.common.economy.api.CommonEconomy;
 import eu.pb4.common.economy.api.EconomyCurrency;
 import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -37,7 +37,7 @@ public class HeadIndexConfig {
 	}
 
 	public Item getCostItem() {
-		return Registries.ITEM.get(costType);
+		return Registry.ITEM.get(costType);
 	}
 
 	public EconomyCurrency getCostCurrency(MinecraftServer server) {

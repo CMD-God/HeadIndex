@@ -3,6 +3,8 @@ package us.potatoboy.headindex;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import eu.pb4.common.economy.api.CommonEconomy;
+import eu.pb4.common.economy.api.EconomyAccount;
+import eu.pb4.common.economy.api.EconomyTransaction;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
